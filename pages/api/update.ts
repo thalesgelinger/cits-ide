@@ -1,0 +1,8 @@
+import fs from 'fs'
+
+export default function handler (req, res) {
+  console.log('aqui')
+  fs.writeFileSync('./pages/ide/test.tsx', req.body, () => {})
+
+  return res.status(200)
+}
