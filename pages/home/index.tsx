@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 `);
 
 
-  const handleCodeChange = (event) => {
+  const handleCodeChange = (event: any) => {
     setMessage(event.target.value);
   }
   
